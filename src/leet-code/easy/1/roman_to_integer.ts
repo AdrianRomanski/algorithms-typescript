@@ -40,21 +40,21 @@ const ROMAN_NUMERALS: { [key: string]: number } = {
 
 const keys = Object.keys(ROMAN_NUMERALS)
 
-function romanToInt(s: string): number {
+export function romanToInt(s: string): number {
     function getRomanNumeralFromString(): string {
         for (const key of keys) {
-            // @ts-ignore
             if (s.startsWith(key)) {
                 s = s.substring(key.length)
                 return key
             }
         }
+        return '';
     }
     const romanNumerals: string[] = []
     while (s.length > 0) {
         romanNumerals.push(getRomanNumeralFromString())
     }
     return romanNumerals.reduce((sum: number, romanNumeralKey: string) => {
-        return sum += ROMAN_NUMERALS[romanNumeralKey];
+        return sum + ROMAN_NUMERALS[romanNumeralKey];
     }, 0)
 }

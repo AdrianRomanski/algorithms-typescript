@@ -2,6 +2,6 @@
 // palindrome
 // , and false otherwise.
 
-function isPalindrome(x: number): boolean {
+export function isPalindrome(x: number): boolean {
     return x.toString().split('').reverse().join('') === x.toString();
 }
