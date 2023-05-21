@@ -1,7 +1,7 @@
-import {longestCommonPrefix} from "./leet-code/easy/1/longest_common_prefix";
+import {createCounter} from "./leet-code/30_days_js-ts/day_2";
 
-let s = longestCommonPrefix( ["flower","flow","flight", "flowtek"]);
+const counter = createCounter(10)
+console.log(counter()) // 10
+console.log(counter()) // 11
+console.log(counter()) // 12
 
-console.log('result', s);
-
-// testing ssh
