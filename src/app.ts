@@ -1,7 +1,3 @@
-import {createCounter} from "./leet-code/30_days_js-ts/day_3";
+import {filter} from "./leet-code/30_days_js-ts/day_5";
 
-let returnObj = createCounter(5);
-
-console.log(returnObj.increment());
-console.log(returnObj.reset());
-console.log(returnObj.decrement());
+console.log(filter([0,10,20,30], function greaterThan10(n) { return n > 10; }))
