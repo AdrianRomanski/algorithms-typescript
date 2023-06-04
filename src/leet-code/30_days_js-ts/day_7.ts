@@ -7,6 +7,7 @@
 //
 // You may assume each function in the array accepts one integer as input and returns one integer as output.
 
+// @ts-ignore
 type F = (x: number) => number;
 
 function compose(functions: F[]): F {

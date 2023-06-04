@@ -1,3 +1,3 @@
-import {filter} from "./leet-code/30_days_js-ts/day_5";
+import {isValid} from "./leet-code/easy/1/valid_parentheses";
 
-console.log(filter([0,10,20,30], function greaterThan10(n) { return n > 10; }))
+console.log(isValid('(]'));
