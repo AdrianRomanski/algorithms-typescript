@@ -1,3 +1,3 @@
-import {isValid} from "./leet-code/easy/1/valid_parentheses";
+import {bigONotation} from "./courses/udemy/colt_steele/big_o_notation";
 
-console.log(isValid('(]'));
+bigONotation();
